@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Laab kai chicken salad",
+    "price": 10,
+    "spice": 0,
+    "img": "laab_kai_chicken_salad.png"
+  },
+  {
+    "title": "Som tam papaya",
+    "price": 9,
+    "spice": 1,
+    "img": "som_tam_papaya_salad.png"
+  },
+  {
+    "title": "Tom yam",
+    "price": 2,
+    "spice": 2,
+    "img": "tom_yam.png"
+  },
+  {
+    "title": "Tom kha",
+    "price": 3,
+    "spice": 3,
+    "img": "tom_kha.png"
+  },
+  {
+    "title": "Fish Cakes",
+    "price": 4,
+    "spice": 4,
+    "img": "fish_cakes.png"
+  },
+  {
+    "title": "Tom yam kong",
+    "price": 5,
+    "spice": 1,
+    "img": "sate.png"
+  },
+  {
+    "title": "Sweet and sour",
+    "price": 6,
+    "spice": 2,
+    "img": "sweet_n_sour.png"
+  },
+  {
+    "title": "Laab kai chicken salad",
+    "price": 7,
+    "spice": 3,
+    "img": "chicken_cashew.png"
+  },
+  {
+    "title": "Laab kai chicken salad",
+    "price": 23,
+    "spice": 4,
+    "img": "beef_massaman.png"
+  }
+]
