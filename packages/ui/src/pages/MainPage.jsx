@@ -4,9 +4,17 @@ import Menu from "../components/Menu/Menu";
 import Filter from "../components/Filter/Filter";
 import Products from "../components/Products/Products";
 import CartModal from "../components/CartModal/CartModal";
-import React from "react";
+import React, {useEffect} from "react";
+import {useDispatch} from "react-redux";
+import { fetchProducts } from '../redux/actions/productsAction'
 
 const MainPage = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchProducts());
+  }, [dispatch]);
+
   return (
     <>
       <Header/>
@@ -14,7 +22,7 @@ const MainPage = () => {
       <Menu/>
       <Filter/>
       <Products/>
-      {/*{<CartModal/>}*/}
+      {false && <CartModal/>}
     </>
   );
 }

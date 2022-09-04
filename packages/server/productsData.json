@@ -1,56 +1,73 @@
 [
   {
+    "id": 1,
     "title": "Laab kai chicken salad",
     "price": 10,
     "spice": 0,
-    "img": "laab_kai_chicken_salad.png"
+    "img": "laab_kai_chicken_salad.png",
+    "category": "Salads"
   },
   {
+    "id": 2,
     "title": "Som tam papaya",
     "price": 9,
     "spice": 1,
-    "img": "som_tam_papaya_salad.png"
+    "img": "som_tam_papaya_salad.png",
+    "category": "Soups"
   },
   {
+    "id": 3,
     "title": "Tom yam",
     "price": 2,
     "spice": 2,
-    "img": "tom_yam.png"
+    "img": "tom_yam.png",
+    "category": "Chicken dishes"
   },
   {
+    "id": 4,
     "title": "Tom kha",
     "price": 3,
     "spice": 3,
-    "img": "tom_kha.png"
+    "img": "tom_kha.png",
+    "category": "Chicken dishes"
   },
   {
+    "id": 5,
     "title": "Fish Cakes",
     "price": 4,
     "spice": 4,
-    "img": "fish_cakes.png"
+    "img": "fish_cakes.png",
+    "category": "Chicken dishes"
   },
   {
+    "id": 6,
     "title": "Tom yam kong",
     "price": 5,
     "spice": 1,
-    "img": "sate.png"
+    "img": "sate.png",
+    "category": "Chicken dishes"
   },
   {
+    "id": 7,
     "title": "Sweet and sour",
     "price": 6,
     "spice": 2,
     "img": "sweet_n_sour.png"
   },
   {
+    "id": 8,
     "title": "Laab kai chicken salad",
     "price": 7,
     "spice": 3,
-    "img": "chicken_cashew.png"
+    "img": "chicken_cashew.png",
+    "category": "Chicken dishes"
   },
   {
+    "id": 9,
     "title": "Laab kai chicken salad",
     "price": 23,
     "spice": 4,
-    "img": "beef_massaman.png"
+    "img": "beef_massaman.png",
+    "category": "Chicken dishes"
   }
 ]

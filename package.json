@@ -8,9 +8,13 @@
   "workspaces": {
     "packages": [
       "packages/*"
+    ],
+    "nohoist": [
+      "react-router-dom"
     ]
   },
   "scripts": {
-    "start": "yarn workspace ui start"
+    "ui": "yarn workspace ui start",
+    "server": "yarn workspace server start"
   }
 }

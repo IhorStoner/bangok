@@ -1,16 +1,16 @@
 import React from 'react';
 import ProductsItem from "./ProductsItem";
-import products from './productsData.json'
+import {useSelector} from "react-redux";
+import {getProducts} from "../../redux/selectors/productsSelector";
 
+const Products = () => {
+  const products = useSelector(getProducts);
 
-const Products = (props) => {
   return (<div>
     <div className="container">
       <div className="products-grid">
         <div className="products-grid__inner">
-          {
-            products.map(product => <ProductsItem product={product}/>)
-          }
+          { products.map(product => <ProductsItem key={product.id} product={product}/>)}
         </div>
       </div>
     </div>

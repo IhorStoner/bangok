@@ -1,9 +1,9 @@
-import MainPage from "./pages/MainPage";
+import Routes from './Routes';
 
 const App = () => {
   return (
     <div className="App">
-      <MainPage />
+      <Routes />
     </div>
   );
 }

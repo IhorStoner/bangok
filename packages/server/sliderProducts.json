@@ -1,0 +1,30 @@
+[
+  {
+    "id": 10,
+    "title": "Laab kai chicken salad",
+    "price": 10,
+    "spice": 0,
+    "img": "penang_shrimp.png"
+  },
+  {
+    "id": 11,
+    "title": "Som tam papaya",
+    "price": 9,
+    "spice": 1,
+    "img": "chicken_cashew.png"
+  },
+  {
+    "id": 12,
+    "title": "Tom yam",
+    "price": 2,
+    "spice": 2,
+    "img": "chicken_loempias.png"
+  },
+  {
+    "id": 13,
+    "title": "Red curry vega",
+    "price": 6,
+    "spice": 3,
+    "img": "red_curry_vega.png"
+  }
+]
