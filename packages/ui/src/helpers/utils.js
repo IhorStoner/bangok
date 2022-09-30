@@ -1,6 +1,5 @@
 const Utils = {
-  port: process.env.PORT || 5000,
-  base_uri: `http://localhost:${this.PORT}`,
+  base_uri: `http://localhost:${process.env.PORT || 5000}`,
 }
 
 export default Utils
