@@ -1,0 +1,35 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+    
+env:
+  DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+  DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+    
+    outputs:
+      current-version:  ${{ steps.createver.outputs.currver }}
+      
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag ihorstoner/bangok:latest
+      
+    - name: Get current version
+      id: currver
+      run: echo "::set-output name=version::$( jq .version package.json )"
+      
+    - name: Login to dockerhub
+      run: docker login -u=$DOCKER_USERNAME -p=$DOCKER_PASSWORD
+      
+    - name: Push to dockerhub
+      run: docker push ihorstoner/bangok:latest
