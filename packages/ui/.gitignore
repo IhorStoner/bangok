@@ -9,7 +9,8 @@
 /coverage
 
 # production
-/packages/server/build
+/build
+/packages/server/ui
 
 # misc
 .DS_Store

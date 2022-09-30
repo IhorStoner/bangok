@@ -1,10 +1,10 @@
 import React from 'react';
 import ProductsItem from "./ProductsItem";
 import {useSelector} from "react-redux";
-import {getProducts} from "../../redux/selectors/productsSelector";
+import {getFilteredProducts} from "../../redux/selectors/productsSelector";
 
 const Products = () => {
-  const products = useSelector(getProducts);
+  const products = useSelector(getFilteredProducts);
 
   return (<div>
     <div className="container">

@@ -10,11 +10,23 @@
       "packages/*"
     ],
     "nohoist": [
-      "react-router-dom"
+      "react-router-dom",
+      "**/react-app/**"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-vue": "^8.1.1",
+    "ncp": "^2.0.0",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2"
   },
   "scripts": {
     "ui": "yarn workspace ui start",
-    "server": "yarn workspace server start"
+    "server": "yarn workspace server start",
+    "build": "yarn workspace ui build",
+    "postbuild": "rimraf ./packages/server/ui && ncp ./packages/ui/build ./packages/server/ui"
   }
 }

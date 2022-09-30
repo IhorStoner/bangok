@@ -1,16 +1,8 @@
 import React from 'react';
 
-const NavItem = (props) => {
+const NavItem = ({name, isActive, onClick}) => {
   return (<>
-    <a href="/" className="ribbon__item ribbon__item_active">All</a>
-    <a href="/" className="ribbon__item">Salads</a>
-    <a href="/" className="ribbon__item">Soups</a>
-    <a href="/" className="ribbon__item">Chicken dishes</a>
-    <a href="/" className="ribbon__item">Beef dishes</a>
-    <a href="/" className="ribbon__item">Seafood dishes</a>
-    <a href="/" className="ribbon__item">Vegetable dishes</a>
-    <a href="/" className="ribbon__item">Bits and bites</a>
-    <a href="/" className="ribbon__item">On the side</a>
+    <button className={`ribbon__item ${isActive && 'ribbon__item_active'}`} onClick={onClick}>{name}</button>
   </>);
 }
 

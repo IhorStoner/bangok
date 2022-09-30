@@ -2,14 +2,21 @@ const express = require('express');
 const app = express();
 const cors = require('cors')
 const products = require('./productsData.json');
+const sliderProducts = require('./sliderProducts.json');
 
 app.use(cors({
   origin: "http://localhost:3000",
   credentials: true,
 }))
 
+app.use(express.static('ui'));
+
 app.get('/products', (req, res) => {
   res.send(products)
+})
+
+app.get('/sliderProducts', (req, res) => {
+  res.send(sliderProducts)
 })
 
 app.get('/products/:id', (req, res) => {
