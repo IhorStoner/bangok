@@ -16,7 +16,7 @@ MAINTAINER <caxnoigor@gmail.com>
 WORKDIR /hillel
 
 ENV NODE_ENV=production
-ENV PORT=5000
+ENV PORT=80
 
 # Copy files from builder image
 COPY --from=builder /hillel/packages/server ./packages/server
