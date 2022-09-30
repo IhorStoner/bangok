@@ -21,6 +21,6 @@ ENV NODE_ENV=production
 COPY --from=builder /hillel/packages/server ./packages/server
 COPY --from=builder /hillel/package.json ./
 
-RUN yarn install
+RUN yarn install --production
 
 CMD ["npm", "run", "server"]
