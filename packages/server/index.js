@@ -4,8 +4,11 @@ const cors = require('cors')
 const products = require('./productsData.json');
 const sliderProducts = require('./sliderProducts.json');
 
+const PORT = process.env.PORT || 5000
+const ORIGIN = process.env.ORIGIN_URI ||  `http://localhost:3000`
+
 app.use(cors({
-  origin: "http://localhost:3000",
+  origin: ORIGIN,
   credentials: true,
 }))
 
@@ -25,7 +28,7 @@ app.get('/products/:id', (req, res) => {
   res.send(product);
 })
 
-const port = process.env.PORT || 5000
-app.listen(port, () => {
-  console.log(`Server listening on port ${port}`)
+
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`)
 })
