@@ -1,10 +1,12 @@
 import React, {useRef,useEffect} from 'react';
-import {useSelector} from "react-redux";
-import {getCart, getCartSum} from "../../redux/selectors/productsSelector";
+import {useDispatch, useSelector} from "react-redux";
+import { getCartCount, getCartSum} from "../../redux/selectors/productsSelector";
+import {openCart} from "../../redux/actions/productsAction";
 
 function CartButton(props) {
   const buttonRef = useRef();
-  const cart = useSelector(getCart)
+  const dispatch = useDispatch();
+  const cartCount = useSelector(getCartCount)
   const cartSum = useSelector(getCartSum)
 
   const onScroll = () => {
@@ -28,10 +30,10 @@ function CartButton(props) {
   }, [buttonRef]);
   
   return (<>
-    <button type="button" ref={buttonRef} className="cart-icon cart-icon_visible">
+    <button type="button" ref={buttonRef} className="cart-icon cart-icon_visible" onClick={() => dispatch(openCart(true))}>
       <div className="cart-icon__inner">
-        <span className="cart-icon__count">{cart.length}</span>
-        <span className="cart-icon__price">{`€${cartSum}`}</span>
+        <span className="cart-icon__count">{cartCount}</span>
+        <span className="cart-icon__price">{`€${cartSum.toFixed(2)}`}</span>
       </div>
     </button>
 </>);

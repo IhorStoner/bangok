@@ -14,8 +14,8 @@ const ProductPage = () => {
   }, [dispatch, productId])
 
   return (<div>
-    Product page
     {product && product.title}
+    {product && <img src={require(`../assets/products/${product.img}`)} alt="product"/>}
   </div>);
 };
 

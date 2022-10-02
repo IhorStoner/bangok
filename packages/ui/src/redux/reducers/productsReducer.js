@@ -1,5 +1,5 @@
-import { createReducer } from "@reduxjs/toolkit";
-import {addToCart, fetchProductById, fetchProducts, fetchSliderProducts, selectCategory} from '../actions/productsAction';
+import {createReducer} from "@reduxjs/toolkit";
+import {addToCart, fetchProductById, fetchProducts, fetchSliderProducts, openCart, selectCategory, subtractProduct} from '../actions/productsAction';
 
 const initialState = {
   data: [],
@@ -7,13 +7,26 @@ const initialState = {
   product: null,
   cart: [],
   category: 'All',
+  isCartOpen: false,
   error: null,
   loading: false,
 };
 
 const productsReducer = createReducer(initialState, {
   [addToCart.type]: (state, action) => {
-    state.cart = [...state.cart , action.payload];
+    const foundedProduct = state.cart.find(item => item.id === action.payload.id)
+    const product = !foundedProduct ? { ...action.payload, count: 1} : { ...action.payload, count: foundedProduct.count+1}
+    state.cart = foundedProduct ? state.cart.map(item => item.id === product.id ? product : item) : [...state.cart, product];
+  },
+  [openCart.type]: (state, action) => {
+    state.isCartOpen = action.payload;
+  },
+  [subtractProduct.type]: (state, action) => {
+    const foundedProduct = state.cart.find(item => item.id === action.payload.id)
+    state.cart = foundedProduct.count !== 1 ?
+      state.cart.map(item => item.id === foundedProduct.id ? {...foundedProduct, count: foundedProduct.count -1} : item)
+      : state.cart.filter(item => item.id !== action.payload.id)
+
   },
   [selectCategory.type]: (state, action) => {
     state.category = action.payload;

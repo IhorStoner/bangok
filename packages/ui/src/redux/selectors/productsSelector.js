@@ -28,6 +28,8 @@ export const getProduct = createSelector(
   products => products.product
 );
 
+
+
 export const getSliderProducts = createSelector(
   state => state.products,
   products => products.sliderProducts
@@ -38,8 +40,17 @@ export const getCart = createSelector(
   products => products.cart
 );
 
-export const getCartSum = createSelector(
+export const getCartCount = createSelector(
   getCart,
-  (cart) => cart.reduce((acc,item) => item.price + acc, 0)
+  cart => cart.reduce((acc, item) => acc + item.count , 0)
 );
 
+export const getCartSum = createSelector(
+  getCart,
+  (cart) => cart.reduce((acc,item) => item.price*item.count + acc, 0)
+);
+
+export const getIsCartOpen = createSelector(
+  state => state.products,
+  products => products.isCartOpen
+);

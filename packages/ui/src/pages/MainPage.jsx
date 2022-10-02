@@ -5,12 +5,13 @@ import Filter from "../components/Filter/Filter";
 import Products from "../components/Products/Products";
 import CartModal from "../components/CartModal/CartModal";
 import React, {useEffect} from "react";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import { fetchProducts } from '../redux/actions/productsAction'
+import {getIsCartOpen} from "../redux/selectors/productsSelector";
 
 const MainPage = () => {
   const dispatch = useDispatch();
-
+  const isCartOpen = useSelector(getIsCartOpen)
   useEffect(() => {
     dispatch(fetchProducts());
   }, [dispatch]);
@@ -22,7 +23,7 @@ const MainPage = () => {
       <Menu/>
       <Filter/>
       <Products/>
-      {false && <CartModal/>}
+      {isCartOpen && <CartModal/>}
     </>
   );
 }

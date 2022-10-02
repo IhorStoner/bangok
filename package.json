@@ -26,6 +26,7 @@
     "rimraf": "^3.0.2"
   },
   "scripts": {
+    "start": "yarn workspace server start",
     "ui": "yarn workspace ui start",
     "server": "yarn workspace server start",
     "build": "yarn workspace ui build",

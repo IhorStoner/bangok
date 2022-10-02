@@ -5,6 +5,10 @@ export const addToCart = createAction("ADD_TO_CART");
 
 export const selectCategory = createAction("SELECT_CATEGORY");
 
+export const openCart = createAction("OPEN_CART");
+
+export const subtractProduct = createAction("SUBTRACT_PRODUCT");
+
 export const fetchProducts = createAsyncThunk('fetchProducts', async () => {
   const data = await axios.get(`/products`).then(
     res => res.data);

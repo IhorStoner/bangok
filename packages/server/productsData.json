@@ -1,73 +1,255 @@
 [
   {
-    "id": 1,
-    "title": "Laab kai chicken salad",
-    "price": 10,
-    "spice": 0,
-    "img": "laab_kai_chicken_salad.png",
-    "category": "Salads"
-  },
-  {
-    "id": 2,
-    "title": "Som tam papaya",
-    "price": 9,
-    "spice": 1,
-    "img": "som_tam_papaya_salad.png",
-    "category": "Soups"
-  },
-  {
-    "id": 3,
-    "title": "Tom yam",
-    "price": 2,
-    "spice": 2,
-    "img": "tom_yam.png",
-    "category": "Chicken dishes"
-  },
-  {
     "id": 4,
-    "title": "Tom kha",
-    "price": 3,
-    "spice": 3,
-    "img": "tom_kha.png",
-    "category": "Chicken dishes"
+    "title": "Som tam papaya salad",
+    "price": 27.30,
+    "img": "som_tam_papaya_salad.png",
+    "isVegeterian": false,
+    "nuts": false,
+    "spiciness": 3,
+    "category": "Salads",
+    "path": "salads"
   },
   {
     "id": 5,
-    "title": "Fish Cakes",
-    "price": 4,
-    "spice": 4,
-    "img": "fish_cakes.png",
-    "category": "Chicken dishes"
+    "title": "Laab kai chicken salad",
+    "price": 8.30,
+    "img": "laab_kai_chicken_salad.png",
+    "isVegeterian": true,
+    "nuts": false,
+    "spiciness": 4,
+    "category": "Salads",
+    "path": "salads"
   },
   {
     "id": 6,
-    "title": "Tom yam kong",
-    "price": 5,
-    "spice": 1,
-    "img": "sate.png",
-    "category": "Chicken dishes"
+    "title": "Beef massaman",
+    "price": 12.30,
+    "img": "beef_massaman.png",
+    "isVegeterian": true,
+    "nuts": false,
+    "spiciness": 0,
+    "category": "Beef dishes",
+    "path": "beefdishes"
   },
   {
     "id": 7,
-    "title": "Sweet and sour",
-    "price": 6,
-    "spice": 2,
-    "img": "sweet_n_sour.png"
+    "title": "Chicken cashew",
+    "price": 24.70,
+    "img": "chicken_cashew.png",
+    "isVegeterian": false,
+    "nuts": true,
+    "spiciness": 1,
+    "category": "Chicken dishes",
+    "path": "chickendishes"
   },
   {
     "id": 8,
-    "title": "Laab kai chicken salad",
-    "price": 7,
-    "spice": 3,
-    "img": "chicken_cashew.png",
-    "category": "Chicken dishes"
+    "title": "Seafood chu chee",
+    "price": 21.20,
+    "img": "chu_chee.png",
+    "isVegeterian": true,
+    "nuts": false,
+    "spiciness": 0,
+    "category": "Seafood dishes",
+    "path": "seafooddishes"
   },
   {
     "id": 9,
-    "title": "Laab kai chicken salad",
-    "price": 23,
-    "spice": 4,
-    "img": "beef_massaman.png",
-    "category": "Chicken dishes"
+    "title": "Fish cakes",
+    "price": 15.60,
+    "img": "fish_cakes.png",
+    "isVegeterian": false,
+    "nuts": true,
+    "spiciness": 4,
+    "category": "Bits and bites",
+    "path": "bitsandbites"
+  },
+  {
+    "id": 10,
+    "title": "Fried noodles",
+    "price": 24.90,
+    "img": "fried_noodles.png",
+    "isVegeterian": false,
+    "nuts": false,
+    "spiciness": 0,
+    "category": "On the side",
+    "path": "ontheside"
+  },
+  {
+    "id": 11,
+    "title": "Thai fried rice",
+    "price": 23.70,
+    "img": "fried_rice.png",
+    "isVegeterian": false,
+    "nuts": false,
+    "spiciness": 4,
+    "category": "On the side",
+    "path": "ontheside"
+  },
+  {
+    "id": 12,
+    "title": "Green curry",
+    "price": 7.70,
+    "img": "green_curry.png",
+    "isVegeterian": true,
+    "nuts": false,
+    "spiciness": 2,
+    "category": "Vegetable dishes",
+    "path": "vegetabledishes"
+  },
+  {
+    "id": 13,
+    "title": "King salad",
+    "price": 26.70,
+    "img": "king_salad.png",
+    "isVegeterian": false,
+    "nuts": false,
+    "spiciness": 0,
+    "category": "On the side",
+    "path": "ontheside"
+  },
+  {
+    "id": 14,
+    "title": "Koong hom pha",
+    "price": 7.30,
+    "img": "koong_hom_pha.png",
+    "isVegeterian": true,
+    "nuts": false,
+    "spiciness": 4,
+    "category": "Bits and bites",
+    "path": "bitsandbites"
+  },
+  {
+    "id": 15,
+    "title": "Krapau vega",
+    "price": 13.50,
+    "img": "krapau_vega.png",
+    "isVegeterian": false,
+    "nuts": false,
+    "spiciness": 3,
+    "category": "Vegetable dishes",
+    "path": "vegetabledishes"
+  },
+  {
+    "id": 16,
+    "title": "Kroepoek",
+    "price": 14.30,
+    "img": "kroepoek.png",
+    "isVegeterian": false,
+    "nuts": false,
+    "spiciness": 1,
+    "category": "On the side",
+    "path": "ontheside"
+  },
+  {
+    "id": 17,
+    "title": "Mini vega springrolls",
+    "price": 28.80,
+    "img": "mini_vega_springrolls.png",
+    "isVegeterian": false,
+    "nuts": true,
+    "spiciness": 2,
+    "category": "Bits and bites",
+    "path": "bitsandbites"
+  },
+  {
+    "id": 18,
+    "title": "Red curry",
+    "price": 28.20,
+    "img": "red_curry.png",
+    "isVegeterian": false,
+    "nuts": false,
+    "spiciness": 0,
+    "category": "Vegetable dishes",
+    "path": "vegetabledishes"
+  },
+  {
+    "id": 19,
+    "title": "Sate",
+    "price": 18.50,
+    "img": "sate.png",
+    "isVegeterian": true,
+    "nuts": false,
+    "spiciness": 4,
+    "category": "Bits and bites",
+    "path": "bitsandbites"
+  },
+  {
+    "id": 20,
+    "title": "Satay sauce",
+    "price": 27.30,
+    "img": "satesaus.png",
+    "isVegeterian": false,
+    "nuts": false,
+    "spiciness": 1,
+    "category": "Bits and bites",
+    "path": "bitsandbites"
+  },
+  {
+    "id": 21,
+    "title": "Stir fried vegetables",
+    "price": 12.90,
+    "img": "stir_fried_vegetables.png",
+    "isVegeterian": true,
+    "nuts": false,
+    "spiciness": 4,
+    "category": "On the side",
+    "path": "ontheside"
+  },
+  {
+    "id": 22,
+    "title": "Sweet'n sour chicken",
+    "price": 10.20,
+    "img": "sweet_n_sour.png",
+    "isVegeterian": true,
+    "nuts": true,
+    "spiciness": 4,
+    "category": "Chicken dishes",
+    "path": "chickendishes"
+  },
+  {
+    "id": 23,
+    "title": "Tofu cashew",
+    "price": 22.80,
+    "img": "tofu_cashew.png",
+    "isVegeterian": true,
+    "nuts": false,
+    "spiciness": 1,
+    "category": "Vegetable dishes",
+    "path": "vegetabledishes"
+  },
+  {
+    "id": 24,
+    "title": "Tom kha",
+    "price": 21.80,
+    "img": "tom_kha.png",
+    "isVegeterian": true,
+    "nuts": true,
+    "spiciness": 3,
+    "category": "Soups",
+    "path": "soups"
+  },
+  {
+    "id": 25,
+    "title": "Tom yam",
+    "price": 26.80,
+    "img": "tom_yam.png",
+    "isVegeterian": true,
+    "nuts": false,
+    "spiciness": 0,
+    "category": "Soups",
+    "path": "soups"
+  },
+  {
+    "id": 26,
+    "title": "White rice",
+    "price": 13.40,
+    "img": "witte_rijst.png",
+    "isVegeterian": true,
+    "nuts": true,
+    "spiciness": 1,
+    "category": "On the side",
+    "path": "ontheside"
   }
 ]
