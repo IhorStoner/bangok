@@ -5,7 +5,7 @@ const products = require('./productsData.json');
 const sliderProducts = require('./sliderProducts.json');
 
 const PORT = process.env.PORT || 5000
-const ORIGIN = process.env.ORIGIN_URI || `http://localhost:3000`
+const ORIGIN = process.env.ORIGIN_URI || `http://127.0.0.1:${PORT}`
 
 app.use(cors({
   origin: ORIGIN,
